@@ -1,0 +1,11 @@
+[Unit]
+Description=test
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/mon_test.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
